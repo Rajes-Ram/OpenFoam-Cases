@@ -53,8 +53,8 @@ boundary
         type patch;
         faces
         (
-            (3 7 6 2)
-            (1 5 4 0)
+            (3 2 1 0)
+            (4 5 6 7)
         );
     }
     inlet
@@ -78,7 +78,7 @@ boundary
         type wall;
         faces
         (
-            (0 3 2 1)
+            (0 1 5 4)
         );
     }
     upperWall
@@ -86,7 +86,7 @@ boundary
         type patch;
         faces
         (
-            (4 5 6 7)
+            (7 6 2 3)
         );
     }
 );
