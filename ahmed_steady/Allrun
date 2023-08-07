@@ -9,11 +9,11 @@ runApplication blockMesh
 runApplication decomposePar -copyZero
 runParallel snappyHexMesh -overwrite
 
-runParallel patchSummary
-runParallel potentialFoam
-runParallel $(getApplication)
+#runParallel patchSummary
+#runParallel potentialFoam
+#runParallel $(getApplication)
 
 runApplication reconstructParMesh -constant
-runApplication reconstructPar -latestTime
+#runApplication reconstructPar -latestTime
 
 #------------------------------------------------------------------------------
