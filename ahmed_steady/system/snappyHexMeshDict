@@ -1,4 +1,4 @@
-/*--------------------------------*- C++ -*----------------------------------*\
+*--------------------------------*- C++ -*----------------------------------*\
   =========                 |
   \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
    \\    /   O peration     | Website:  https://openfoam.org
@@ -27,10 +27,10 @@ addLayers       true;
 // - to 'snap' the mesh boundary to the surface
 geometry
 {
-    motorBike
+   Ahmed 
     {
         type triSurfaceMesh;
-        file "motorBike.obj";
+        file "Ahmed.stl";
     }
 
     refinementBox

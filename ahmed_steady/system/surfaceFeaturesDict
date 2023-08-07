@@ -13,7 +13,7 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-surfaces ("motorBike.obj");
+surfaces ("Ahmed.stl");
 
 // Identify a feature when angle between faces < includedAngle
 includedAngle       150;

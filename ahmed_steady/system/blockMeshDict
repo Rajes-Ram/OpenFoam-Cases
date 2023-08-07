@@ -14,18 +14,31 @@ FoamFile
 
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-convertToMeters 1;
+convertToMeters .001;
+
+L 1044;
+H 288;
+W 389;
+
+x_min #calc "-1 * (($L / 2) + (3 * $L))";
+x_max #calc "(($L / 2) + (8 * $L))";
+z_max #calc "(($W / 2) + (1 * $L))";
+z_min #calc "-1 * (($W / 2) + (1 * $L))";
+y_max #calc "(($H / 2) + (2 * $L))";
+y_min #calc "-1 * (($H / 2) + (50))";
 
 vertices
 (
-    (-5 -4 0)
-    (15 -4 0)
-    (15  4 0)
-    (-5  4 0)
-    (-5 -4 8)
-    (15 -4 8)
-    (15  4 8)
-    (-5  4 8)
+//back
+    ($x_min $y_min $z_min) //0
+    ($x_max $y_min $z_min) //1
+    ($x_max $y_max $z_min) //2
+    ($x_min $y_max $z_min) //3
+//front
+    ($x_min $y_min $z_max) //4
+    ($x_max $y_min $z_max) //5
+    ($x_max $y_max $z_max) //6
+    ($x_min $y_max $z_max) //7
 );
 
 blocks
